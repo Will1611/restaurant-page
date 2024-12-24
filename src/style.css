@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #1f1f1f;
+  --green: #008d44;
+  --white: #f7f7f7;
+  --red: #c82a35;
+  --gold: #daa520;
+  --border: 2px solid var(--black);
+  /* font-size: 62.5%; */
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, var(--green), var(--red));
+  font-family: "Raleway", sans-serif;
+  color: var(--black);
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    height: 100%;
+    background-color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    border-left: var(--border);
+    border-right: var(--border);
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  border-bottom: var(--border);
+
+  .heading-main {
+    font-family: "Italianno", serif;
+    font-size: 5rem;
+    cursor: pointer;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    /* background-color: var(--green); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .buttons {
+      /* background-color: var(--red); */
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 2rem;
+
+      button {
+        font-family: inherit;
+        padding: 0.25rem 1.5rem;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: var(--white);
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+
+      button:hover {
+        color: var(--gold);
+      }
+    }
+  }
+}
+
+.content {
+  padding: 4rem 2rem;
+
+  .content-top {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      word-spacing: 0.5rem;
+      letter-spacing: 0.1rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .content-bottom {
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      word-spacing: 0.5rem;
+      letter-spacing: 0.1rem;
+      line-height: 2rem;
+    }
+  }
+
+  /* background-color: pink;
+  height: 500px; */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  /* background-color: aqua; */
+}
