@@ -23,13 +23,12 @@ body {
   background: linear-gradient(to right, var(--green), var(--red));
   font-family: "Raleway", sans-serif;
   color: var(--black);
-  overflow: hidden;
 
   .container {
     position: relative;
     height: 100%;
     background-color: var(--white);
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     border-left: var(--border);
     border-right: var(--border);
@@ -86,10 +85,13 @@ header {
 
 .content {
   padding: 4rem 2rem;
+  height: 70vh;
+  overflow-y: scroll;
 
   .content-top {
     text-align: center;
     margin-bottom: 4rem;
+    flex-shrink: 0;
 
     p {
       font-size: 2rem;
@@ -110,6 +112,28 @@ header {
       letter-spacing: 0.1rem;
       line-height: 2rem;
     }
+    ul {
+      list-style: none;
+      font-weight: 200;
+    }
+  }
+
+  ol {
+    list-style: upper-roman;
+    font-weight: 400;
+  }
+
+  ol > li {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul > li {
+    margin-bottom: 2.5rem;
+  }
+
+  li > h2 {
+    margin-bottom: 1rem;
   }
 
   /* background-color: pink;
@@ -122,6 +146,7 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  background-color: var(--white);
   /* background-color: aqua; */
 }

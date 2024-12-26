@@ -1,8 +1,6 @@
 "use strict";
 
 export function showHome() {
-  console.log("Now showing home");
-
   const contentTop = document.querySelector(".content-top");
   const contentBottom = document.querySelector(".content-bottom");
   let elP = document.createElement("p");

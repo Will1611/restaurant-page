@@ -1,5 +1,3 @@
-// Testing Git
-
 "use strict";
 
 import "./style.css";
@@ -22,6 +20,8 @@ const variables = (() => {
 const clearContent = () => {
   const contentTop = variables.contentTop;
   const contentBottom = variables.contentBottom;
+  contentTop.classList.add("content-top");
+  contentBottom.classList.add("content-bottom");
   contentTop.textContent = "";
   contentBottom.textContent = "";
 };

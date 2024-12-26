@@ -1,10 +1,10 @@
 "use strict";
 
 export const showMenu = () => {
-  console.log("Menu, muthafucka");
-
   const contentTop = document.querySelector(".content-top");
   const contentBottom = document.querySelector(".content-bottom");
+  let elP = document.createElement("p");
 
-  contentTop.textContent = "Our Menu";
+  elP.textContent = "Our Menu";
+  contentTop.appendChild(elP);
 };
