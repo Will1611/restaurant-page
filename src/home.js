@@ -1,8 +1,11 @@
 "use strict";
 
+// import imgHome from "./img/img-home.jpeg";
+
 export function showHome() {
   const contentTop = document.querySelector(".content-top");
   const contentBottom = document.querySelector(".content-bottom");
+  const elImg = document.createElement("img");
   let elP = document.createElement("p");
 
   elP.textContent = "Welcome to Santino!";
@@ -25,6 +28,9 @@ export function showHome() {
   elP.textContent =
     "From freshly made pasta to wood-fired pizzas, our dishes are designed to transport you to the sun-kissed shores of Italy. Every meal is a celebration of the art of Italian cooking — rich in flavor, heart, and soul.";
   contentBottom.appendChild(elP);
+
+  // elImg.src = imgHome;
+  // contentBottom.appendChild(elImg);
 
   elP = document.createElement("p");
   elP.textContent = "  Use the buttons at the top to navigate our site.";

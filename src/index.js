@@ -1,10 +1,10 @@
 "use strict";
 
 import "./style.css";
-import "./about.js";
+import { showAbout } from "./about.js";
 import { showHome } from "./home.js";
 import { showMenu } from "./menu.js";
-import "./contact.js";
+import { showContact } from "./contact.js";
 
 const variables = (() => {
   const menu = document.querySelector(".btn-menu");
@@ -40,11 +40,13 @@ const listen = (() => {
   });
 
   btnAbout.addEventListener("click", () => {
-    console.log("Now showing about");
+    clearContent();
+    showAbout();
   });
 
   btnContact.addEventListener("click", () => {
-    console.log("Now showing contact");
+    clearContent();
+    showContact();
   });
 
   headingMain.forEach((heading) => {
