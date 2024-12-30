@@ -1,6 +1,6 @@
 "use strict";
 
-// import imgHome from "./img/img-home.jpeg";
+// import imgHome from "img/img-home";
 
 export function showHome() {
   const contentTop = document.querySelector(".content-top");
