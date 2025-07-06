@@ -1,11 +1,10 @@
 "use strict";
 
-// import imgHome from "img/img-home";
+// import imgHome from "./img/img-home";
 
 export function showHome() {
   const contentTop = document.querySelector(".content-top");
   const contentBottom = document.querySelector(".content-bottom");
-  const elImg = document.createElement("img");
   let elP = document.createElement("p");
 
   elP.textContent = "Welcome to Santino!";
